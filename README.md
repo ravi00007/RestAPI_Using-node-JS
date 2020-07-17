@@ -4,4 +4,4 @@
 # you can upload csv file (the data's u can see as a html table )
 # you can upload xlsx file (the data's u can see as a html table )
 # user profile pic using multer package
-# user can change thier details
+# user can change their details
