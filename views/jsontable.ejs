@@ -1,0 +1,23 @@
+<table class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Designation</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% for(var i=0; i < jsondata.length; i++) { %>
+      <tr>
+        <td><%= jsondata[i].Name %></td>
+        <td><%= jsondata[i].Address %></td>
+        <td><%= jsondata[i].Gender %></td>
+        <td><%=  jsondata[i].Designation %></td>
+        <td><%= jsondata[i].Age %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>

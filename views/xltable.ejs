@@ -1,0 +1,23 @@
+<table class="table table-inverse">
+    <thead>
+      <tr>
+        <th>Segment</th>
+        <th>Country</th>
+        <th>Product</th>
+        <th>Discount</th>
+        <th>Unit</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% for(var i=0; i < xldata.length; i++) { %>
+      <tr>
+        <td><%= xldata[i].Segment %></td>
+        <td><%= xldata[i].Country %></td>
+        <td><%= xldata[i].Product %></td>
+        <td><%=  xldata[i].Discount %></td>
+        <td><%= xldata[i].Unit %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>

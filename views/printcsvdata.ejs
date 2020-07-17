@@ -1,0 +1,29 @@
+
+<table class="table table-striped table-primary">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>password</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%if (details.length >0){ %>
+      <% details.forEach(function(row){ %>
+      <tr>
+        <td><%= row.name %></td>
+        <td><%= row.email %></td>
+        <td><%= row.password %></td>
+        <td><%= row.date %></td>
+        <td><%= row.totalHour %></td>
+        <td><%= row.total %></td>
+      </tr>
+      <% })}else{ %>
+        <tr>
+            <td colspan="6">No Record Found</td>
+            
+          </tr>
+        <% } %>
+    </tbody>
+  </table>
